@@ -122,7 +122,13 @@ export default function AppAppBar() {
               >
                 Blog
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                component={RouterLink}
+                to="/custom-poetry-examples"
+              >
                 Examples
               </Button>
               <Button variant="text" color="info" size="small">

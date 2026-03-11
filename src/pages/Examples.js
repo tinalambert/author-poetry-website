@@ -2,8 +2,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import AppTheme from "../theme/AppTheme";
 import AppAppBar from "../components/AppAppBar";
-import MainContent from "../components/blogComponents/MainContent";
-import Latest from "../components/blogComponents/Latest";
+import MainContent from "../components/examplesComponents/MainContent";
 
 export default function Blog(props) {
   return (
@@ -16,7 +15,6 @@ export default function Blog(props) {
         sx={{ display: "flex", flexDirection: "column", my: 16, gap: 4 }}
       >
         <MainContent />
-        <Latest />
       </Container>
     </AppTheme>
   );
