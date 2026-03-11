@@ -13,37 +13,42 @@ import Canceled from "./pages/Canceled";
 import Admin from "./pages/Admin";
 import Blog from "./pages/Blog";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import AppTheme from "./theme/AppTheme";
 import AppAppBar from "./components/AppAppBar";
 import SignIn from "./pages/SignIn";
 import Login from "./pages/Login";
 import Playground from "./pages/Playground";
+import Footer from "./components/Footer";
 
-export default function App() {
+export default function App(props) {
   return (
     <div>
-      {/* <Header /> */}
-      <CssBaseline enableColorScheme />
-      <AppAppBar />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/poetry" element={<Books />} />
-          <Route path="/blog" element={<Blog />} />
-          {/* Temporary routes for poetry and blog until those pages are built */}
+      <AppTheme {...props}>
+        {/* <Header /> */}
+        <CssBaseline enableColorScheme />
+        <AppAppBar />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/books" element={<Books />} />
+            <Route path="/poetry" element={<Books />} />
+            <Route path="/blog" element={<Blog />} />
+            {/* Temporary routes for poetry and blog until those pages are built */}
 
-          <Route path="/product/:id" element={<Product />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/tips" element={<Tips />} />
-          <Route path="/success" element={<Success />} />
-          <Route path="/canceled" element={<Canceled />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/signup" element={<SignIn />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/playground" element={<Playground />} />
-        </Routes>
-      </div>
+            <Route path="/product/:id" element={<Product />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/tips" element={<Tips />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="/canceled" element={<Canceled />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/signup" element={<SignIn />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/playground" element={<Playground />} />
+          </Routes>
+        </div>
+        <Footer />
+      </AppTheme>
     </div>
   );
 }

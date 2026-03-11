@@ -11,7 +11,6 @@ import Pricing from "./homeComponents/Pricing";
 import Features from "./homeComponents/Features";
 import Testimonials from "./homeComponents/Testimonials";
 import FAQ from "./homeComponents/FAQ";
-import Footer from "./homeComponents/Footer";
 import ProductCategories from "./homeComponents/ProductCategories";
 
 export default function MarketingPage(props) {
@@ -35,7 +34,6 @@ export default function MarketingPage(props) {
           <Divider />
           <FAQ />
           <Divider />
-          <Footer />
         </div>
       </AppTheme>
     </>

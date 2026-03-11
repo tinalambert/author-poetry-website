@@ -123,7 +123,7 @@ export default function AppAppBar() {
                 Blog
               </Button>
               <Button variant="text" color="info" size="small">
-                Testimonials
+                Examples
               </Button>
               <Button variant="text" color="info" size="small">
                 Highlights
@@ -157,12 +157,12 @@ export default function AppAppBar() {
               alignItems: "center",
             }}
           >
-            <Button color="primary" variant="text" size="small">
+            {/* <Button color="primary" variant="text" size="small">
               Sign in
             </Button>
             <Button color="primary" variant="contained" size="small">
               Sign up
-            </Button>
+            </Button> */}
             <Tooltip title="Go to cart">
               <IconButton
                 component={RouterLink}
@@ -209,13 +209,13 @@ export default function AppAppBar() {
                 </Box>
 
                 <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
+                <MenuItem>Examples</MenuItem>
                 <MenuItem>Highlights</MenuItem>
                 <MenuItem>Pricing</MenuItem>
                 <MenuItem>FAQ</MenuItem>
                 <MenuItem>Admin</MenuItem>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>
+                {/* <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>
                     Sign up
                   </Button>
@@ -224,7 +224,7 @@ export default function AppAppBar() {
                   <Button color="primary" variant="outlined" fullWidth>
                     Sign in
                   </Button>
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem>
                   <Tooltip title="Go to cart">
                     <IconButton
