@@ -11,6 +11,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/X";
 import SitemarkIcon from "../pages/homeComponents/SitemarkIcon.js";
+import myLogo from "../images/TL_Amber_Logo_sm.png";
 
 function Copyright() {
   return (
@@ -54,7 +55,13 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: "100%", sm: "60%" } }}>
-            <SitemarkIcon />
+            <a href="/" style={{ display: "flex", alignItems: "center" }}>
+              <img
+                src={myLogo}
+                alt="TL Amber Logo"
+                style={{ height: 40, width: "auto" }}
+              />
+            </a>
             <Typography
               variant="body2"
               gutterBottom
@@ -107,8 +114,12 @@ export default function Footer() {
           <Link color="text.secondary" variant="body2" href="#">
             Features
           </Link>
-          <Link color="text.secondary" variant="body2" href="#">
-            Testimonials
+          <Link
+            color="text.secondary"
+            variant="body2"
+            href="/custom-poetry-examples"
+          >
+            Examples
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
             Highlights
@@ -133,8 +144,8 @@ export default function Footer() {
           <Link color="text.secondary" variant="body2" href="#">
             About us
           </Link>
-          <Link color="text.secondary" variant="body2" href="#">
-            Careers
+          <Link color="text.secondary" variant="body2" href="/blog">
+            Blog
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
             Press

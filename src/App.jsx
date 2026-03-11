@@ -18,6 +18,7 @@ import AppAppBar from "./components/AppAppBar";
 import SignIn from "./pages/SignIn";
 import Login from "./pages/Login";
 import Playground from "./pages/Playground";
+import Examples from "./pages/Examples";
 import Footer from "./components/Footer";
 
 export default function App(props) {
@@ -38,11 +39,12 @@ export default function App(props) {
             <Route path="/product/:id" element={<Product />} />
             <Route path="/about" element={<About />} />
             <Route path="/tips" element={<Tips />} />
+            <Route path="/custom-poetry-examples" element={<Examples />} />
             <Route path="/success" element={<Success />} />
             <Route path="/canceled" element={<Canceled />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/signup" element={<SignIn />} />
+            {/* <Route path="/signup" element={<SignIn />} /> */}
             <Route path="/login" element={<Login />} />
             <Route path="/playground" element={<Playground />} />
           </Routes>
