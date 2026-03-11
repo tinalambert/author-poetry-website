@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/X";
-import SitemarkIcon from "./SitemarkIcon.js";
+import SitemarkIcon from "../pages/homeComponents/SitemarkIcon.js";
 
 function Copyright() {
   return (
@@ -138,6 +138,9 @@ export default function Footer() {
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
             Press
+          </Link>
+          <Link color="text.secondary" variant="body2" href="/login">
+            Login
           </Link>
         </Box>
         <Box

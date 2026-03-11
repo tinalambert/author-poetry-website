@@ -4,7 +4,6 @@ import AppTheme from "../theme/AppTheme";
 import AppAppBar from "../components/AppAppBar";
 import MainContent from "./blogComponents/MainContent";
 import Latest from "./blogComponents/Latest";
-import Footer from "./blogComponents/Footer";
 
 export default function Blog(props) {
   return (
@@ -19,7 +18,6 @@ export default function Blog(props) {
         <MainContent />
         <Latest />
       </Container>
-      <Footer />
     </AppTheme>
   );
 }
